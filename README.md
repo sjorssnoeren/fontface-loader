@@ -7,7 +7,7 @@ As of today, implementing font-faces is still a cumbersome task to do. Most of u
 
 This is all it takes to generate all your required formats. Just hand in a .ttf file and the other files as well as the matching CSS is generated automatically.
 
-```
+```javascript
 fontfeest('./fixtures/OpenSans-Light.ttf', 'Open Sans', 300).then((css) => {
   console.log(css);
 });
