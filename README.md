@@ -18,3 +18,4 @@ fontfeest('./fixtures/OpenSans-Light.ttf', 'Open Sans', 300).then((css) => {
 * Try integrating with the Webpack enviroment to make it easy to output CSS at the right place.
 * Explore ways to integrate with node require and eventually a Webpack Plugin.
 * Try if it's possible to fetch data from the fonts itself. Font weights, families and styles may or may not be enclosed in the font files already.
+* Add tests
