@@ -63,7 +63,3 @@ const fontfeest = function fontfeest(file, fontFamily, fontWeight = 400, fontSty
 };
 
 module.exports = fontfeest;
-
-fontfeest('./fixtures/OpenSans-Light.ttf', 'Open Sans', 300).then((css) => {
-  console.log(css);
-});
