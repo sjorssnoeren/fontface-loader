@@ -1,0 +1,14 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "jsx-a11y/href-no-hash": "off",
+    "arrow-body-style": [
+      "error",
+      "always"
+    ]
+  }
+}

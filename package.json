@@ -1,0 +1,27 @@
+{
+  "name": "fontfeest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/eslint/bin/eslint.js lib test --fix"
+  },
+  "author": "Sjors Snoeren",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "ttf2eot": "^2.0.0",
+    "ttf2woff": "^2.0.1",
+    "ttf2woff2": "^2.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.5.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.3.0"
+  }
+}
