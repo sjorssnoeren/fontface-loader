@@ -52,6 +52,10 @@ const createCSSFontFaceTemplate = (dirname, filename, styles) => {
 };
 
 const fontfeest = function fontfeest(file, fontFamily, fontWeight = 400, fontStyle = 'normal') {
+  if (typeof fontFamily !== 'string') {
+    throw new Error('Expected second argument `fontFamily` to be a string');
+  }
+
   const dirname = path.dirname(file);
   const filename = path.basename(file, '.ttf');
   const ttfBuffer = fs.readFileSync(file);
