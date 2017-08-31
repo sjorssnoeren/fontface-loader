@@ -1,8 +1,9 @@
+# Test Files
+fixtures/*.eot
 fixtures/*.woff
 fixtures/*.woff2
 
 .DS_Store
-sessions
 
 # Logs
 logs
