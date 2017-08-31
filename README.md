@@ -52,7 +52,9 @@ Now you're good to go. Above you find the very minimal setup, it's however possi
 
 **Note: your fonts are generated in the directory next to it's origin and then passed to the output target. You can use all formats manually as well.**
 
-For now, no advanced options are available. Usage is as follows:
+For now, no advanced options are available. I've chosen to change the extension of `.ttf` files to `.webfont` to make sure the `.ttf` loader works properly for importing the real `.ttf`. A `.webfont` file contains the same contents as the `.ttf` file to make this loader work.
+
+Usage is as follows:
 
 ```
 import './LOCATION_TO/YOUR_FONT.webfont';
