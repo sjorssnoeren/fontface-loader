@@ -1,6 +1,6 @@
 {
   "name": "fontface-loader",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "@font-face loader for webpack. Just require a truetype file",
   "main": "index.js",
   "directories": {
@@ -32,7 +32,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sjorssnoeren/fontfeest.git"
+    "url": "git+https://github.com/sjorssnoeren/fontface-loader.git"
   },
   "keywords": [
     "fontface",
@@ -42,7 +42,7 @@
     "webfonts"
   ],
   "bugs": {
-    "url": "https://github.com/sjorssnoeren/fontfeest/issues"
+    "url": "https://github.com/sjorssnoeren/fontface-loader/issues"
   },
-  "homepage": "https://github.com/sjorssnoeren/fontfeest#readme"
+  "homepage": "https://github.com/sjorssnoeren/fontface-loader#readme"
 }
