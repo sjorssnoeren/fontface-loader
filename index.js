@@ -72,4 +72,4 @@ const createFontFace = function createFontFace(file) {
 
 module.exports = createFontFace;
 
-createFontFace('./fixtures/OpenSans-Light.ttf').then(console.log);
+// createFontFace('./fixtures/OpenSans-Light.ttf').then(console.log);
