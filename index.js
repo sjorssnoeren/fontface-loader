@@ -3,6 +3,7 @@ const path = require('path');
 
 const Promise = require('bluebird');
 
+const ttfInfo = require('ttfinfo');
 
 const transformers = {
   // All transformers take an Uint8Array as input and output
@@ -37,33 +38,38 @@ const writeTransformedFonts = (dirname, filename, ttfBuffer) => {
   return Promise.all(promises);
 };
 
-const createCSSFontFaceTemplate = (dirname, filename, styles) => {
-  return `
-    @font-face {
-      font-family: ${styles.fontFamily};
-      font-weight: ${styles.fontWeight};
-      font-style: ${styles.fontStyle};
-      src: url('${dirname}/${filename}.eot');
-      src: url('${dirname}/${filename}.woff2') format('woff2'),
-          url('${dirname}/${filename}.woff') format('woff'),
-          url('${dirname}/${filename}.ttf')  format('truetype');
-    }
-  `;
+const createCSSFontFaceTemplate = (dirname, filename, ttfBuffer) => {
+  const ttfInfoPromised = Promise.promisify(ttfInfo);
+
+  return ttfInfoPromised(ttfBuffer).then((info) => {
+    const fontFamily = info.tables['name']['1'] || filename;
+    const fontWeight = info.tables['OS/2'].weightClass || 400;
+    const fontStyle  = info.tables['post'].italicAngle === 0 ? 'normal' : 'italic';
+
+    return `
+      @font-face {
+        font-family: '${fontFamily}';
+        font-weight: ${fontWeight};
+        font-style: '${fontStyle}';
+        src: url('${dirname}/${filename}.eot');
+        src: url('${dirname}/${filename}.woff2') format('woff2'),
+            url('${dirname}/${filename}.woff') format('woff'),
+            url('${dirname}/${filename}.ttf')  format('truetype');
+      }
+    `;
+  });
 };
 
-const fontfeest = function fontfeest(file, fontFamily, fontWeight = 400, fontStyle = 'normal') {
-  if (typeof fontFamily !== 'string') {
-    throw new Error('Expected second argument `fontFamily` to be a string');
-  }
-
+const createFontFace = function createFontFace(file) {
   const dirname = path.dirname(file);
   const filename = path.basename(file, '.ttf');
   const ttfBuffer = fs.readFileSync(file);
 
   return writeTransformedFonts(dirname, filename, ttfBuffer).then(() => {
-    const style = { fontFamily, fontWeight, fontStyle };
-    return createCSSFontFaceTemplate(dirname, filename, style);
+    return createCSSFontFaceTemplate(dirname, filename, ttfBuffer);
   });
 };
 
-module.exports = fontfeest;
+module.exports = createFontFace;
+
+createFontFace('./fixtures/OpenSans-Light.ttf').then(console.log);
