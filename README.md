@@ -20,6 +20,7 @@ createFontFace('./fixtures/OpenSans-Light.ttf').then((css) => {
 * Look for ways to compress woff files
 * Make use of caching mechanisms of webpack
 * Accept .otf files as input (firstly converted to ttf)
+* Look for ways to enable async loading of the font-face
 
 ## Installing
 
