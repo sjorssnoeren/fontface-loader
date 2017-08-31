@@ -1,7 +1,7 @@
-FontFeest
+@font-face loader for webpack
 =========
 
-Painless cross-browser font-face in 1 line JavaScript. **This is a work in progress**
+**I am aware that this loader might be out of scope for webpack, however I'm still wondering what it might do for the future. This project is currently a work in progress.**
 
 As of today, implementing font-faces is still a cumbersome task to do. Most of us go to an online conversion site to make it happen. With the current state of JavaScript, we must be able to do it quicker and simpler. Welcome FontFeest.
 
