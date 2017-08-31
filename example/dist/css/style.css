@@ -3,20 +3,20 @@
   font-family: 'Open Sans';
   font-weight: 300;
   font-style: normal;
-  src: url('/Users/sjorssnoeren/web/fontfeest/example/assets/fonts/OpenSans-Light.eot');
-  src: url('/Users/sjorssnoeren/web/fontfeest/example/assets/fonts/OpenSans-Light.woff2') format('woff2'),
-      url('/Users/sjorssnoeren/web/fontfeest/example/assets/fonts/OpenSans-Light.ttf')  format('truetype'),
-      url('/Users/sjorssnoeren/web/fontfeest/example/assets/fonts/OpenSans-Light.woff') format('woff');
+  src: url(/dist/fonts/2c7d99f09db7c4c52ef7deb370977de8.eot);
+  src: url(/dist/fonts/0b356dcc9963fde4a504d49564f51449.woff2) format('woff2'),
+      url(/dist/fonts/9ff12f694e5951a6f51a9d63b05062e7.ttf)  format('truetype'),
+      url(/dist/fonts/62e528f1c0050022d2d0be36d8247f9f.woff) format('woff');
 }
     
 @font-face {
   font-family: 'Aller';
   font-weight: 700;
   font-style: italic;
-  src: url('/Users/sjorssnoeren/web/fontfeest/example/assets/fonts/Aller_BdIt.eot');
-  src: url('/Users/sjorssnoeren/web/fontfeest/example/assets/fonts/Aller_BdIt.woff2') format('woff2'),
-      url('/Users/sjorssnoeren/web/fontfeest/example/assets/fonts/Aller_BdIt.ttf')  format('truetype'),
-      url('/Users/sjorssnoeren/web/fontfeest/example/assets/fonts/Aller_BdIt.woff') format('woff');
+  src: url(/dist/fonts/dad7aeb09165f52563b724817cb1f4a8.eot);
+  src: url(/dist/fonts/4d14129deb9623792463764fde9fb748.woff2) format('woff2'),
+      url(/dist/fonts/ce40230bf0951a94aeda0cd7ef2da9e6.ttf)  format('truetype'),
+      url(/dist/fonts/387a83cfd603fb2494ef296a90f291ba.woff) format('woff');
 }
     body {
   background-color: #f8f8f8;

@@ -10,7 +10,9 @@ module.exports = {
     js: './assets/app.js',
   },
   output: {
-    filename: './dist/js/app.js',
+    filename: './js/app.js',
+    path: path.join(__dirname, '/dist/'),
+    publicPath: '/dist',
   },
   module: {
     rules: [{
@@ -20,10 +22,18 @@ module.exports = {
         use: 'css-loader',
       }),
     }, {
-      test: /\.ttf$/,
+      test: /\.webfont$/,
       use: ExtractTextPlugin.extract({
         use: ['css-loader', 'fontface-loader']
       }),
+    }, {
+      test: /\.(ttf|eot|woff|woff2)$/,
+      use: [{
+        loader: 'file-loader',
+        options: {
+          outputPath: '/fonts/',
+        },
+      }],
     }],
   },
   resolveLoader: {
@@ -33,7 +43,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new ExtractTextPlugin('/dist/css/style.css'),
+    new ExtractTextPlugin('/css/style.css'),
   ],
   devtool: 'eval',
 };

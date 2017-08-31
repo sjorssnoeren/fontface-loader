@@ -57,7 +57,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "/dist";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 0);
@@ -68,19 +68,19 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("Object.defineProperty(__webpack_exports__, \"__esModule\", { value: true });\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fonts_OpenSans_Light_ttf__ = __webpack_require__(1);\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fonts_OpenSans_Light_ttf___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__fonts_OpenSans_Light_ttf__);\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__fonts_Aller_BdIt_ttf__ = __webpack_require__(2);\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__fonts_Aller_BdIt_ttf___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__fonts_Aller_BdIt_ttf__);\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_css__ = __webpack_require__(3);\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__app_css__);\n\n\n\n\n\n//////////////////\n// WEBPACK FOOTER\n// ./assets/app.js\n// module id = 0\n// module chunks = 0\n\n//# sourceURL=webpack:///./assets/app.js?");
+eval("Object.defineProperty(__webpack_exports__, \"__esModule\", { value: true });\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fonts_OpenSans_Light_webfont__ = __webpack_require__(1);\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fonts_OpenSans_Light_webfont___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__fonts_OpenSans_Light_webfont__);\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__fonts_Aller_BdIt_webfont__ = __webpack_require__(2);\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__fonts_Aller_BdIt_webfont___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__fonts_Aller_BdIt_webfont__);\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_css__ = __webpack_require__(3);\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__app_css__);\n\n\n\n\n\n//////////////////\n// WEBPACK FOOTER\n// ./assets/app.js\n// module id = 0\n// module chunks = 0\n\n//# sourceURL=webpack:///./assets/app.js?");
 
 /***/ }),
 /* 1 */
 /***/ (function(module, exports) {
 
-eval("// removed by extract-text-webpack-plugin\n\n//////////////////\n// WEBPACK FOOTER\n// ./assets/fonts/OpenSans-Light.ttf\n// module id = 1\n// module chunks = 0\n\n//# sourceURL=webpack:///./assets/fonts/OpenSans-Light.ttf?");
+eval("// removed by extract-text-webpack-plugin\n\n//////////////////\n// WEBPACK FOOTER\n// ./assets/fonts/OpenSans-Light.webfont\n// module id = 1\n// module chunks = 0\n\n//# sourceURL=webpack:///./assets/fonts/OpenSans-Light.webfont?");
 
 /***/ }),
 /* 2 */
 /***/ (function(module, exports) {
 
-eval("// removed by extract-text-webpack-plugin\n\n//////////////////\n// WEBPACK FOOTER\n// ./assets/fonts/Aller_BdIt.ttf\n// module id = 2\n// module chunks = 0\n\n//# sourceURL=webpack:///./assets/fonts/Aller_BdIt.ttf?");
+eval("// removed by extract-text-webpack-plugin\n\n//////////////////\n// WEBPACK FOOTER\n// ./assets/fonts/Aller_BdIt.webfont\n// module id = 2\n// module chunks = 0\n\n//# sourceURL=webpack:///./assets/fonts/Aller_BdIt.webfont?");
 
 /***/ }),
 /* 3 */
