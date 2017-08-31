@@ -56,7 +56,7 @@ For now, no advanced options are available. I've chosen to change the extension 
 
 Usage is as follows:
 
-```
+```javascript
 import './LOCATION_TO/YOUR_FONT.webfont';
 ```
 
