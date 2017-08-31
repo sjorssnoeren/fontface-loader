@@ -1,9 +1,10 @@
 {
   "name": "fontface-loader",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.0.2",
+  "description": "@font-face loader for webpack. Just require a truetype file",
   "main": "index.js",
   "directories": {
+    "example": "example",
     "test": "test"
   },
   "scripts": {
@@ -28,5 +29,20 @@
     "eslint-plugin-react": "^7.3.0",
     "extract-text-webpack-plugin": "^3.0.0",
     "webpack": "^3.5.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sjorssnoeren/fontfeest.git"
+  },
+  "keywords": [
+    "fontface",
+    "loader",
+    "fontface-loader",
+    "webpack",
+    "webfonts"
+  ],
+  "bugs": {
+    "url": "https://github.com/sjorssnoeren/fontfeest/issues"
+  },
+  "homepage": "https://github.com/sjorssnoeren/fontfeest#readme"
 }
