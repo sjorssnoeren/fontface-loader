@@ -1,15 +1,14 @@
 @font-face loader for webpack
 =========
 
-**I am aware that this loader might be out of scope for webpack, however I'm still wondering what it might do for the future.**
 *This project is currently a work in progress and I would love to get some feedback.*
 
 As of today, implementing font-faces is still a cumbersome task to do. Most of us go to an online conversion site to make it happen. With the current state of JavaScript, we must be able to do it quicker and simpler. Welcome @font-face loader for Webpack.
 
-This is all it takes to generate all your required formats. Just hand in a .ttf file and the other files as well as the matching CSS is generated automatically (including `font-weight` and `font-style` properties). Change the extension of a `.ttf` file to `.webfont` to make sure it get's compiled by webpack.
+This is all it takes to generate all your required formats. Just hand in a .ttf file and the other files as well as the matching CSS is generated automatically (including `font-weight` and `font-style` properties).
 
 ```javascript
-import './fonts/OpenSans-Light.webfont';
+import './fonts/OpenSans-Light.ttf';
 ```
 
 Generates the following:
@@ -38,11 +37,11 @@ Add the following rules to your webpack configuration:
 
 ```javascript
 {
-  test: /\.webfont$/,
-  use: ['css-loader', 'fontface-loader'],
+  test: /^(?!.*\.generated\.ttf$).*\.ttf$/,
+  use: ['css-loader', 'fontface-loader']
 }, {
-  test: /\.(ttf|eot|woff|woff2)$/,
-  use: ['file-loader'],
+  test: /\.generated.(ttf|eot|woff|woff2)$/,
+  use: ['file-loader']
 },
 ```
 
@@ -52,12 +51,12 @@ Now you're good to go. Above you find the very minimal setup, it's however possi
 
 **Note: your fonts are generated in the directory next to it's origin and then passed to the output target. You can use all formats manually as well.**
 
-For now, no advanced options are available. I've chosen to change the extension of `.ttf` files to `.webfont` to make sure the `.ttf` loader works properly for importing the real `.ttf`. A `.webfont` file contains the same contents as the `.ttf` file to make this loader work.
+For now, no advanced options are available.
 
 Usage is as follows:
 
 ```javascript
-import './LOCATION_TO/YOUR_FONT.webfont';
+import './LOCATION_TO/YOUR_FONT.ttf';
 ```
 
 It should be possible to use fonts from other npm packages, however this is not tested yet.

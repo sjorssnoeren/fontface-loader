@@ -1,3 +1,3 @@
-import './fonts/OpenSans-Light.webfont';
-import './fonts/Aller_BdIt.webfont';
+import './fonts/OpenSans-Light.ttf';
+import './fonts/Aller_BdIt.ttf';
 import './app.css';

@@ -22,12 +22,12 @@ module.exports = {
         use: 'css-loader',
       }),
     }, {
-      test: /\.webfont$/,
+      test: /^(?!.*\.generated\.ttf$).*\.ttf$/,
       use: ExtractTextPlugin.extract({
         use: ['css-loader', 'fontface-loader']
       }),
     }, {
-      test: /\.(ttf|eot|woff|woff2)$/,
+      test: /\.generated.(ttf|eot|woff|woff2)$/,
       use: [{
         loader: 'file-loader',
         options: {
