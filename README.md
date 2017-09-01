@@ -49,7 +49,7 @@ Now you're good to go. Above you find the very minimal setup, it's however possi
 
 ## Usage
 
-**Note: your fonts are generated in the directory next to it's origin and then passed to the output target. You can use all formats manually as well.**
+**Note: your fonts are generated in the directory next to it's origin and then passed to the output target.**
 
 For now, no advanced options are available.
 
