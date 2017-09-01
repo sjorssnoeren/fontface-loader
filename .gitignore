@@ -4,6 +4,7 @@ fixtures/*.woff
 fixtures/*.woff2
 
 .DS_Store
+example/dist
 
 # Logs
 logs
