@@ -27,7 +27,7 @@ Generates the following:
 
 ## Installing
 
-Firstly make sure you've installed webpack 3.0 or greater. (I've not yet tested this plugin with earlier versions)
+Firstly make sure you've installed webpack 3.0 or greater. (I've not yet tested this plugin with earlier versions). Run this line to install the fontface-loader. You may want to install css-loader and style-loader if you haven't done already so.
 
 ```
 $ npm install fontface-loader --save
