@@ -6,9 +6,10 @@ fixtures/*.woff
 fixtures/*.woff2
 
 example/dist
-example/assets/fonts/*.eot
-example/assets/fonts/*.woff
-example/assets/fonts/*.woff2
+example/assets/fonts/*.generated.ttf
+example/assets/fonts/*.generated.eot
+example/assets/fonts/*.generated.woff
+example/assets/fonts/*.generated.woff2
 
 # Logs
 logs
