@@ -2,7 +2,7 @@
 =========
 
 ![https://img.shields.io/circleci/project/github/sjorssnoeren/fontface-loader.svg](https://img.shields.io/circleci/project/github/sjorssnoeren/fontface-loader.svg)
-![https://img.shields.io/npm/v/@sjorssnoeren/fontface-loader.svg](https://img.shields.io/npm/v/@sjorssnoeren/fontface-loader.svg)
+![https://www.npmjs.com/package/fontface-loader](https://img.shields.io/npm/v/fontface-loader.svg)
 
 
 As of today, implementing font-faces is still a cumbersome task to do. Most of us go to an online conversion site to make it happen. With the current state of JavaScript, we must be able to do it quicker and simpler. Welcome @font-face loader for Webpack.
@@ -40,14 +40,29 @@ Add the following rules to your webpack configuration:
 ```javascript
 {
   test: /^(?!.*\.generated\.ttf$).*\.ttf$/,
-  use: ['css-loader', 'fontface-loader']
+  use: ['css-loader', 'fontface-loader'],
 }, {
   test: /\.generated.(ttf|eot|woff|woff2)$/,
-  use: ['file-loader']
+  use: ['file-loader'],
 },
 ```
 
-Now you're good to go. Above you find the very minimal setup, it's however possible to customize using the webpack ExtractPlugin or file-loader options. An example of this usage can be found under the examples directory.
+Now you're good to go. Above you find the very minimal setup, it's however possible to customize using the webpack ExtractPlugin or file-loader options. For examples please view the examples directory.
+
+### Configure output directory for fonts (using file-loader)
+
+```javascript
+{
+  test: /\.generated.(ttf|eot|woff|woff2)$/,
+  use: [{
+    loader: 'file-loader',
+    options: {
+      outputPath: '/fonts/',
+    },
+  }],
+},
+```
+
 
 ## Usage
 
