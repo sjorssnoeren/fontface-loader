@@ -47,7 +47,22 @@ Add the following rules to your webpack configuration:
 },
 ```
 
-Now you're good to go. Above you find the very minimal setup, it's however possible to customize using the webpack ExtractPlugin or file-loader options. An example of this usage can be found under the examples directory.
+Now you're good to go. Above you find the very minimal setup, it's however possible to customize using the webpack ExtractPlugin or file-loader options.
+
+### Configure output directory for fonts (using file-loader)
+
+```
+{
+  test: /\.generated.(ttf|eot|woff|woff2)$/,
+  use: [{
+    loader: 'file-loader',
+    options: {
+      outputPath: '/fonts/',
+    },
+  }],
+},
+```
+
 
 ## Usage
 
