@@ -40,10 +40,10 @@ Add the following rules to your webpack configuration:
 ```javascript
 {
   test: /^(?!.*\.generated\.ttf$).*\.ttf$/,
-  use: ['css-loader', 'fontface-loader']
+  use: ['css-loader', 'fontface-loader'],
 }, {
   test: /\.generated.(ttf|eot|woff|woff2)$/,
-  use: ['file-loader']
+  use: ['file-loader'],
 },
 ```
 
