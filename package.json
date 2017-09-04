@@ -1,6 +1,6 @@
 {
   "name": "fontface-loader",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "@font-face loader for webpack. Just require a truetype file",
   "main": "index.js",
   "directories": {
