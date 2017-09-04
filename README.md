@@ -1,7 +1,7 @@
 @font-face loader for webpack
 =========
 
-![https://img.shields.io/circleci/project/github/sjorssnoeren/fontface-loader/master.svg](https://img.shields.io/circleci/project/github/sjorssnoeren/fontface-loader/master.svg)
+![https://img.shields.io/circleci/project/github/sjorssnoeren/fontface-loader.svg](https://img.shields.io/circleci/project/github/sjorssnoeren/fontface-loader.svg)
 ![https://img.shields.io/npm/v/@sjorssnoeren/fontface-loader.svg](https://img.shields.io/npm/v/@sjorssnoeren/fontface-loader.svg)
 
 
