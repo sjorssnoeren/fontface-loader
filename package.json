@@ -20,6 +20,9 @@
     "ttf2woff2": "^2.0.3",
     "ttfinfo": "^0.2.0"
   },
+  "engines": {
+    "node": ">= 4.3 < 5.0.0 || >= 5.10"
+  },
   "devDependencies": {
     "chai": "^4.1.2",
     "css-loader": "^0.28.7",
