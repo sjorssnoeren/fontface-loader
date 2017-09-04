@@ -47,11 +47,11 @@ Add the following rules to your webpack configuration:
 },
 ```
 
-Now you're good to go. Above you find the very minimal setup, it's however possible to customize using the webpack ExtractPlugin or file-loader options.
+Now you're good to go. Above you find the very minimal setup, it's however possible to customize using the webpack ExtractPlugin or file-loader options. For examples please view the examples directory.
 
 ### Configure output directory for fonts (using file-loader)
 
-```
+```javascript
 {
   test: /\.generated.(ttf|eot|woff|woff2)$/,
   use: [{
