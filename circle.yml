@@ -1,0 +1,20 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/fontface-loader
+    docker:
+      - image: circleci/node:4.8.1
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: install-npm
+          command: npm install
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: test
+          command: npm test

@@ -8,26 +8,34 @@
     "test": "test"
   },
   "scripts": {
-    "test": "./node_modules/eslint/bin/eslint.js lib test --fix"
+    "test": "./node_modules/eslint/bin/eslint.js lib test --fix && ./node_modules/nyc/bin/nyc.js ./node_modules/mocha/bin/mocha"
   },
   "author": "Sjors Snoeren",
   "license": "MIT",
   "dependencies": {
     "bluebird": "^3.5.0",
+    "loader-utils": "^1.1.0",
     "ttf2eot": "^2.0.0",
     "ttf2woff": "^2.0.1",
     "ttf2woff2": "^2.0.3",
     "ttfinfo": "^0.2.0"
   },
+  "engines": {
+    "node": ">= 4.3 < 5.0.0 || >= 5.10"
+  },
   "devDependencies": {
+    "chai": "^4.1.2",
     "css-loader": "^0.28.7",
+    "dirty-chai": "^2.0.1",
     "eslint": "^4.5.0",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.3.0",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^0.11.2",
+    "mocha": "^3.5.0",
+    "nyc": "^11.1.0",
     "style-loader": "^0.18.2",
     "webpack": "^3.5.5"
   },
