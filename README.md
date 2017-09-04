@@ -2,7 +2,7 @@
 =========
 
 ![https://img.shields.io/circleci/project/github/sjorssnoeren/fontface-loader.svg](https://img.shields.io/circleci/project/github/sjorssnoeren/fontface-loader.svg)
-![https://img.shields.io/npm/v/@sjorssnoeren/fontface-loader.svg](https://img.shields.io/npm/v/@sjorssnoeren/fontface-loader.svg)
+![https://img.shields.io/npm/v/fontface-loader.svg](https://www.npmjs.com/package/fontface-loader)
 
 
 As of today, implementing font-faces is still a cumbersome task to do. Most of us go to an online conversion site to make it happen. With the current state of JavaScript, we must be able to do it quicker and simpler. Welcome @font-face loader for Webpack.
