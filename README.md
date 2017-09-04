@@ -1,8 +1,6 @@
 @font-face loader for webpack
 =========
 
-*This project is currently a work in progress and I would love to get some feedback.*
-
 As of today, implementing font-faces is still a cumbersome task to do. Most of us go to an online conversion site to make it happen. With the current state of JavaScript, we must be able to do it quicker and simpler. Welcome @font-face loader for Webpack.
 
 This is all it takes to generate all your required formats. Just hand in a `.ttf` file and the other files as well as the matching CSS is generated automatically (including `font-weight` and `font-style` properties).
@@ -51,12 +49,10 @@ Now you're good to go. Above you find the very minimal setup, it's however possi
 
 **Note: your fonts are generated in the directory next to it's origin and then passed to the output target.**
 
-For now, no advanced options are available.
-
 Usage is as follows:
 
 ```javascript
-import './LOCATION_TO/YOUR_FONT.ttf';
+import './fonts/OpenSans-Light.ttf';
 ```
 
 It should be possible to use fonts from other npm packages, however this is not tested yet.
@@ -70,8 +66,8 @@ It should be possible to use fonts from other npm packages, however this is not 
 
 ## Roadmap
 
-* Maybe make use of caching mechanisms of webpack
-* Add extensive options, to make it work for various developers. Make sure you'll be able to toggle which formats you want.
-* Accept .otf files as input (firstly converted to ttf)
+* Add extensive options, to make it work for various developers.
+* Make sure you'll be able to toggle which formats you want.
+* Accept other file formats as input (.otf, firstly converted to ttf)
 * Look for ways to enable async loading of the font-face
 * Add tests
