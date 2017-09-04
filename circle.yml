@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/fontface-loader
     docker:
-      - image: circleci/node:4.3
+      - image: circleci/node:4.3.0
     steps:
       - checkout
       - restore_cache:
