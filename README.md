@@ -8,13 +8,13 @@
 
 As of today, implementing font-faces is still a cumbersome task to do. Most of us go to an online conversion site to make it happen. With the current state of JavaScript, we must be able to do it quicker and simpler. Welcome @font-face loader for Webpack.
 
-This is all it takes to generate all your required formats. Just hand in a `.ttf` file. The other files as well as the matching CSS will be generated automatically (including `font-weight` and `font-style` properties).
+This is all it takes to add a font to your site. Just hand in a `.ttf` file. The other files as well as the matching CSS will be generated automatically (including `font-weight` and `font-style` properties) and will be loaded by webpack's css-loader.
 
 ```javascript
 import './fonts/OpenSans-Light.ttf';
 ```
 
-Generates the following:
+Creates this code:
 
 ```css
 @font-face {
