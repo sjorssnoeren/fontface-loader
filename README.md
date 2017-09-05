@@ -1,5 +1,6 @@
 @font-face loader for webpack
 =========
+*This is currently a work in progress*
 
 ![https://img.shields.io/circleci/project/github/sjorssnoeren/fontface-loader.svg](https://img.shields.io/circleci/project/github/sjorssnoeren/fontface-loader.svg)
 ![https://www.npmjs.com/package/fontface-loader](https://img.shields.io/npm/v/fontface-loader.svg)
